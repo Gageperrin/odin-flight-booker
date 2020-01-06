@@ -1,0 +1,8 @@
+<%= simple_form_for(flight) do |f| %>
+    <%= f.input :airport_from, collection: :airport %>
+    <%= f.input :airport_to,   collection: :airport %>
+    <%= f.input :passengers,   collection: 1..4 %>
+    <%= f.input :date,         as: :date %>
+    <%= f.button :submit %>
+
+<% end %>

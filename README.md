@@ -1,24 +1,46 @@
-# README
+# Flight Booker App
+Flight Booker is a simulated booking app where users can search and book specific flights. It was developed in Ruby on Rails from scratch and involves advanced querying between Airports, Flights, Passengers and Bookings objects.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project is primarily intended to demonstrate proficiency with:
+    * Prepopulating select Tags with Collections
+    * Nested Forms and Parameters
+    * Deleting Nested Form Objects
+    * Many-to-Many Relationships
+    * Customized Forms
 
-Things you may want to cover:
+_This project was created according to the specifications of 
+[The Odin Project](https://www.theodinproject.com/courses/ruby-on-rails/lessons/building-advanced-forms)'s curriculum._
 
-* Ruby version
 
-* System dependencies
 
-* Configuration
+## Using the app
 
-* Database creation
+To use this app, clone the repo and then install implemented gems.
 
-* Database initialization
+```
+$ bundle install --without production
+```
 
-* How to run the test suite
+Then, migrate the database.
 
-* Services (job queues, cache servers, search engines, etc.)
+```
+$ rails db:migrate
+```
 
-* Deployment instructions
+If you want to load sample users and posts, use seeds.
 
-* ...
+```
+$ rails db:seed
+```
+
+Run the test suite to verify the app functions correctly.
+
+```
+$ rails test
+```
+
+If the test suite passes, run the app on a local server.
+
+```
+$ rails server
+```

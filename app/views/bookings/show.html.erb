@@ -1,0 +1,27 @@
+<h1>Your Booking</h1>
+<h5>
+    <b>From:</b> <%= @flight.from_airport.full_name%><br>
+    <b>To:</b>  <%= @flight.to_airport.full_name%><br>
+    <b>At:</b>  <%= @flight.depart_at.strftime("%d.%m.%Y - %H:%m") %><hr>
+</h5>
+<div>
+    <% @booking.passengers.each_with_index do |p,i| %>
+    <br>
+    <div class="card">
+    <div class="card-header">
+      <b><%= "Passenger #{i+1}"%></b>
+    </div>
+    <div class="card-body">
+      <div class="row">
+      <div class="col-md-3"><b>Name:</b></div><div class="col-md-9"> <%= p.name %></div>
+      </div>
+      <div class="row">
+      <div class="col-md-3"><b>Email:</b></div><div class="col-md-9"> <%= p.email %></div>
+      </div>
+      <div class="row">
+      <div class="col-md-3"><b>Ticket no:</b></div><div class="col-md-9"> <%= @booking.tickets[i].id %></div>
+      </div>
+      </div>
+      <% end %>
+    </div>
+</div>

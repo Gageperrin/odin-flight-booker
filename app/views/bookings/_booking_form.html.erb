@@ -1,0 +1,6 @@
+<%= simple_form_for @booking do |f| %>
+  <%=  f.hidden_field :flight_id, value: @flight.id %>
+  <%=  f.input_field :name                          %>
+  <%=  f.input_field :email                         %>
+  <%=  f.button :submit 'Book Now'                  %>
+<% end %>

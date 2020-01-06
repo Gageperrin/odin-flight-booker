@@ -1,3 +1,9 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  root 'flights#index'
+  get 'about', to: 'static_pages#about'
+  get 'bookings/new'
+  get 'bookings/show'
+
+  resources :flights
+  resources :bookings
 end
