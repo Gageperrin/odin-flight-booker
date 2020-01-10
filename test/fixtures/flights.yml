@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  start_id: one
+  finish_id: one
+  depart: 2020-01-10 10:29:04
+  duration: MyString
+
+two:
+  start_id: two
+  finish_id: two
+  depart: 2020-01-10 10:29:04
+  duration: MyString
