@@ -1,9 +1,5 @@
 Rails.application.routes.draw do
+  get 'static_pages/home'
+  get 'static_pages/about'
   root 'flights#index'
-  get 'about', to: 'static_pages#about'
-  get 'bookings/new'
-  get 'bookings/show'
-
-  resources :flights
-  resources :bookings
 end

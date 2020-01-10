@@ -1,8 +1,0 @@
-<div class="row">
-    <h1>Welcome to your Flight Booker!</h1>
-    <%= render 'search_form', flight: @flight %>
-</div>
-
-<% if params[:commit] == 'Search Flights' %>
-    <%= render 'search_results' %>
-<% end %>
