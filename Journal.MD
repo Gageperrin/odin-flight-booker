@@ -38,3 +38,18 @@ With assistance from Discord, discovered that the model was configured incorrect
 Already completed.
 
 #### Step 5. Search and view results on the flights/index page.
+
+Cleaning up the search form.
+
+Flights/index page appears but with no content.
+
+Adjusted models and search form again alongside index view to fix it. Had to adjust select tag for departure date to make the date field appear. However it merges time and day all together and does not look particularly great.
+
+#### Step 6. Create search form to submit GETS
+
+Done with previous step.
+
+#### Step 7. Home page should have four dropdown menus.
+
+Done with Step 5.
+
